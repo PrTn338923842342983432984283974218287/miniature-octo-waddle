@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProtonFare - BW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-size: 2.5em;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            max-height: 60vh; /* Adjusted max height */
+            overflow-y: scroll; /* Make the list scrollable */
+            z-index: 10;
+            width: 60%; /* Adjusted width */
+            margin-top: 20px;
+            padding-right: 20px; /* Add padding for scrollbar */
+            scrollbar-width: none; /* For Firefox */
+        }
+
+        ul::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari, and Opera */
+        }
+
+        li {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+
+        li:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #3498db;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.3s ease;
+        }
+
+        li:hover::before {
+            transform: scaleY(1);
+        }
+
+        li span {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        li p {
+            margin: 5px 0 0;
+            color: #ccc;
+        }
+
+        /* Snowflakes */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            background-color: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>ProtonFare BW</h1>
+    
+    <ul>
+        <li>
+            <span>example.com</span>
+            <p>Reason Unspecified</p>
+        </li>
+        <li>
+            <span>google.com</span>
+            <p>Bypassing Bot Protection Failure</p>
+        </li>
+        <li>
+            <span>mail.google.com</span>
+            <p>Bypassing Bot Protection Failure</p>
+        </li>
+        <li>
+            <span>googlefeud.com</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>example.org</span>
+            <p>Reason Unspecified</p>
+        </li>
+        <li>
+            <span>vimeo.com</span>
+            <p>Reason Unspecified</p>
+        </li>
+        <li>
+            <span>soundcloud.com</span>
+            <p>Bot Piracy Failure</p>
+        </li>
+        <li>
+            <span>tiktok.com</span>
+            <p>Bypassing Bot Protection Failure</p>
+        </li>
+        <li>
+            <span>reddit.com</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>stackoverflow.com</span>
+            <p>IT Security Failure</p>
+        </li>
+        <li>
+            <span>krunker.io</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>shellshock.io</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>chess.com</span>
+            <p>Unloaded Containers </p>
+        </li>
+        <li>
+            <span>tetr.io</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>littlealchemy.com</span>
+            <p>Cant load in ):</p>
+        </li>
+        <li>
+            <span>skribbl.io</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>flappybird.io</span>
+            <p>Could not connect issues</p>
+        </li>
+        <li>
+            <span>2048tetris.com</span>
+            <p>Unloaded Containers</p>
+        </li>
+        <li>
+            <span>youtube.com</span>
+            <p>*Currently Unblocked*</p>
+            <p>*10:00am - 2/8/24</p>
+        </li>
+        <li>
+            <span>www.ecosia.com</span>
+            <p>Unknown Reason</p>
+        </li>
+        <li>
+            <span>ask.com</span>
+            <p>Unknown Reason</p>
+        </li>
+        <li>
+            <span>bing.com</span>
+            <p>Unknown Reason</p>
+        </li>
+        <li>
+            <span>brave.com</span>
+            <p>Unknown Reason</p>
+        </li>
+        <li>
+            <span>roblox.com</span>
+            <p>Unknown Reason</p>
+        </li>
+        <li>
+            <span>iview.abc.net.au</span>
+            <p>*Currently Unblocked*</p>
+            <p>*10:10am - 2/8/24</p>
+        </li>
+        <hr>
+        <li>
+            <span>If you have any questions or suggestions</span>
+            <span>here are the links to the forums</span>
+            <p></p>
+            <p>Dev Program | https://forms.gle/iabHsGfStiwyWA1q8</p>
+            <p>Forum | https://forms.gle/8Fy7GAawhEz4j8UK9</p>
+        </li>
+    </ul>
+
+    <script>
+        const snowflakeCount = 200; // Number of snowflakes
+
+        for (let i = 0; i < snowflakeCount; i++) {
+            const snowflake = document.createElement('div');
+            snowflake.classList.add('snowflake');
+            document.body.appendChild(snowflake);
+
+            // Random size and position for each snowflake
+            const size = Math.random() * 5 + 5;
+            snowflake.style.width = `${size}px`;
+            snowflake.style.height = `${size}px`;
+            snowflake.style.left = `${Math.random() * 100}vw`;
+            snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Different falling speed
+            snowflake.style.animationDelay = `${Math.random() * 5}s`; // Different start time
+        }
+    </script>
+
+</body>
+</html>
